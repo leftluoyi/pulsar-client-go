@@ -228,6 +228,11 @@ func (p *partitionProducer) Topic() string {
 	return p.topic
 }
 
+func (p *partitionProducer) UpdateTopic(topic) string {
+	p.topic = topic
+	return p.topic
+}
+
 func (p *partitionProducer) Name() string {
 	return p.producerName
 }
