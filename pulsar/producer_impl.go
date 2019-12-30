@@ -116,14 +116,11 @@ func (p *producer) Topic() string {
 	return p.topic
 }
 
-<<<<<<< HEAD
 func (p *producer) UpdateTopic(topic string) string {
 	p.topic = topic
 	return p.topic
 }
 
-=======
->>>>>>> 5004b5d81001f7276091b11699cf568778d83556
 func (p *producer) Name() string {
 	return p.producers[0].Name()
 }
