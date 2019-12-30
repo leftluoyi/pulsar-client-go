@@ -164,7 +164,5 @@ func (p *producer) Flush() error {
 func (p *producer) Close() {
 	for _, pp := range p.producers {
 		pp.Close()
-		pp = nil
 	}
-	p = nil
 }
