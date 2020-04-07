@@ -118,6 +118,9 @@ func (p *producer) Topic() string {
 
 func (p *producer) UpdateTopic(topic string) string {
 	p.topic = topic
+	for e := range p.producers {
+		p.producers[e].UpdateTopic(topic)
+	}
 	return p.topic
 }
 
